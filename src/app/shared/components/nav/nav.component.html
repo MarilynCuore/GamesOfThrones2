@@ -1,0 +1,12 @@
+<nav>
+    <div class="nav">
+        <div class="nav__logo">
+            <img src="" alt="">
+        </div>
+        <div class="nav__list">
+            <div class="nav__list--item" *ngFor="let item of navItems">
+                <a [routerLink]="'/' + item.url">{{item.title}}</a>
+            </div>
+        </div>
+    </div>
+</nav>
