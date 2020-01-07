@@ -5,7 +5,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { SearchComponent } from './components/search/search.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { CharactersListComponent } from './components/characters-list/characters-list.component';
-
+import { SwiperModule } from 'ngx-swiper-wrapper';
 
 const COMPONENTS = [
   NavComponent,
@@ -18,7 +18,8 @@ const COMPONENTS = [
   declarations: [...COMPONENTS],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    SwiperModule
   ],
   exports: [...COMPONENTS]
 })
